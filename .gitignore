@@ -1,5 +1,4 @@
 /node_modules
 # production
 /build
-package-lock.json
 access.log
