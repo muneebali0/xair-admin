@@ -1,0 +1,824 @@
+:root {
+  /* Main theme color */
+  --portal-theme-primary: #0d0d0d;
+  --portal-theme-secondary: #131313;
+  --portal-theme-light: #1a1a1a;
+  --portal-theme-color: #bf2626;
+  --text-primary-color: #c5cfd1;
+  --input-border-color: #2a2a2a;
+}
+
+body {
+  background-color: var(--portal-theme-primary);
+  color: var(--text-primary-color) !important;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px !important;
+}
+
+body::-webkit-scrollbar,
+.mui-table-container::-webkit-scrollbar {
+  display: none;
+}
+
+.mui-table-container {
+  min-width: auto !important;
+}
+
+.app-header,
+.app-sidebar {
+  background-color: var(--portal-theme-secondary) !important;
+  color: var(--text-primary-color);
+}
+
+.app-header {
+  flex-direction: row !important;
+  justify-content: space-between;
+}
+
+.account-menu-box .MuiPopover-paper {
+  position: absolute;
+  top: 50px !important;
+  right: 25px !important;
+  left: auto !important;
+}
+
+.account-popover-avatar-img {
+  width: 40px !important;
+  height: 40px !important;
+  top: 10px;
+  right: 20px;
+}
+
+.account-menu-box .MuiPopover-paper::before,
+.custom-menu-popover .MuiPopover-paper::before {
+  background-color: var(--portal-theme-primary) !important;
+}
+
+.account-menu-box {
+  color: var(--text-primary-color) !important;
+}
+
+.account-menu-box ul svg {
+  color: var(--portal-theme-color);
+}
+
+.user-profile-name {
+  padding: 5px 16px;
+}
+
+.account-menu-box ul {
+  /* padding: 16px; */
+  color: var(--text-primary-color) !important;
+}
+
+.account-menu-box ul li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.account-menu-box ul li:hover,
+.custom-menu-popover ul li:hover {
+  background-color: var(--portal-theme-secondary);
+}
+
+.app-logo {
+  width: 90px;
+}
+
+.app-logo-name {
+  color: var(--text-primary-color);
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  margin-left: 12px;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.menus-list {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: var(--text-primary-color) !important;
+  width: 100%;
+  padding-left: 16px !important;
+  font-size: 14px !important;
+}
+
+.menus-list span {
+  font-size: 14px !important;
+}
+
+.menus-list:hover {
+  background-color: var(--portal-theme-secondary) !important;
+  color: var(--portal-theme-color) !important;
+}
+
+.menuActive {
+  background-color: var(--portal-theme-secondary) !important;
+  color: var(--portal-theme-color) !important;
+}
+
+.menus-list svg {
+  color: var(--portal-theme-color) !important;
+}
+
+.theme-card {
+  background-color: var(--portal-theme-secondary) !important;
+  border-radius: 5px;
+}
+
+.mui-bg-custom-table {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.mui-bg-custom-table tr {
+  white-space: nowrap;
+}
+
+.sidebar-divider {
+  color: #fff;
+}
+
+.sidebar-icons {
+  font-size: 16px;
+  width: 35px;
+}
+
+.dashboard-icon-box {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: var(--portal-theme-color);
+  color: #fff;
+  padding-top: 6px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.MuiTableCell-head,
+.MuiTableSortLabel-root,
+.MuiTableSortLabel-root svg {
+  color: var(--portal-theme-color) !important;
+  font-weight: bold !important;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+}
+
+.MuiTableCell-head,
+.MuiTableCell-body {
+  padding: 12px !important;
+  border: none !important;
+  color: var(--text-primary-color) !important;
+}
+
+.MuiTableRow-root:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.MuiTableCell-head {
+  border-bottom: 1px solid var(--input-border-color) !important;
+}
+
+.mui-table-footer {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.MuiTablePagination-selectLabel,
+.MuiTablePagination-displayedRows {
+  margin-bottom: 0 !important;
+}
+
+.MuiTablePagination-select:focus {
+  background-color: transparent !important;
+}
+
+.MuiTablePagination-selectIcon,
+.MuiTablePagination-toolbar,
+.MuiTablePagination-actions svg {
+  color: var(--text-primary-color) !important;
+  fill: var(--text-primary-color) !important;
+}
+
+.MuiMenu-paper,
+.MuiMenu-list {
+  background-color: var(--portal-theme-primary) !important;
+  color: var(--portal-theme-color) !important;
+}
+
+.MuiMenu-paper .Mui-selected {
+  background-color: var(--portal-theme-secondary) !important;
+  color: var(--portal-theme-color);
+}
+
+.reduce-cell-padding {
+  padding: 5px !important;
+}
+
+.mui-table-search-input {
+  color: var(--text-primary-color) !important;
+  border: 1px solid var(--input-border-color) !important;
+}
+
+.mui-table-search-input input {
+  padding: 10px 0px;
+}
+
+.Mui-focused fieldset {
+  outline: none !important;
+  border: none !important;
+}
+
+.login-form .Mui-focused fieldset,
+.login-form fieldset {
+  border: 1px solid var(--input-border-color) !important;
+}
+
+.mui-table-heading h2 {
+  font-size: 25px;
+}
+
+.add--button button {
+  border: none;
+  background-color: var(--portal-theme-color);
+  padding: 7px 25px !important;
+  color: #fff !important;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.forms-drawer-height {
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 40px;
+}
+
+/* width */
+.app-sidebar-box .MuiDrawer-paper::-webkit-scrollbar,
+.chatting-users-list::-webkit-scrollbar,
+.chatting-messages::-webkit-scrollbar,
+.forms-drawer-height::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 5px;
+}
+
+/* Track */
+.app-sidebar-box .MuiDrawer-paper::-webkit-scrollbar-track,
+.chatting-users-list::-webkit-scrollbar-track,
+.chatting-messages::-webkit-scrollbar-track,
+.forms-drawer-height::-webkit-scrollbar-track {
+  background: var(--portal-theme-primary);
+}
+
+/* Handle */
+.app-sidebar-box .MuiDrawer-paper::-webkit-scrollbar-thumb,
+.chatting-users-list::-webkit-scrollbar-thumb,
+.chatting-messages::-webkit-scrollbar-thumb,
+.forms-drawer-height::-webkit-scrollbar-thumb {
+  background: rgba(50, 68, 73, 0.603);
+}
+
+/* Handle on hover */
+.app-sidebar-box .MuiDrawer-paper::-webkit-scrollbar-thumb:hover,
+.chatting-users-list::-webkit-scrollbar-thumb:hover,
+.chatting-messages::-webkit-scrollbar-thumb:hover,
+.forms-drawer-height::-webkit-scrollbar-thumb:hover {
+  background: var(--portal-theme-light);
+}
+
+.forms-drawer .MuiDrawer-paper {
+  background-color: var(--portal-theme-primary) !important;
+  width: 600px;
+  max-width: 100%;
+}
+
+.forms-drawer .drawer-title {
+  color: var(--text-primary-color);
+}
+
+.drawer-cross-icon {
+  background-color: var(--portal-theme-secondary) !important;
+  color: var(--text-primary-color) !important;
+}
+
+.input-form .form-control {
+  background-color: transparent !important;
+  color: var(--text-primary-color) !important;
+  border: 1px solid var(--input-border-color);
+}
+
+.input-form .form-control label {
+  color: var(--text-primary-color) !important;
+}
+
+.input-form .form-control input,
+.input-form .MuiOutlinedInput-root,
+.input-form .MuiOutlinedInput-root:hover {
+  color: var(--text-primary-color);
+  border: none !important;
+}
+
+.input-form .mui-select,
+.MuiSelect-select fieldset {
+  padding: 0;
+  color: var(--text-primary-color) !important;
+}
+
+.input-form .mui-select:focus {
+  border: 1px solid var(--input-border-color) !important;
+}
+
+.mui-select svg {
+  color: var(--portal-theme-color);
+}
+
+.upload-button label {
+  align-items: center;
+  background-color: var(--portal-theme-secondary);
+  color: var(--portal-theme-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  height: 76px;
+  padding: 15px;
+  width: 76px;
+  border: 1px solid var(--portal-theme-color);
+}
+
+.upload-file-preview img {
+  border-radius: 5px;
+  display: inline;
+  height: 76px;
+  margin-right: 10px;
+  width: 76px;
+}
+
+.upload-file-preview span {
+  background-color: red;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  height: 20px;
+  position: absolute;
+  right: 3px;
+  text-align: center;
+  top: -10px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.upload-file-preview {
+  position: relative;
+}
+
+.light-border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.login-card {
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card .login-logo img {
+  width: 80px;
+}
+
+.login-card .theme-card {
+  max-width: 480px;
+  min-width: 311px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-form .add--button button {
+  width: 100%;
+  font-size: 16px;
+  padding: 8px 0;
+}
+
+.login-form .visibility-password svg {
+  color: var(--portal-theme-color) !important;
+}
+
+.login-card .developed-by {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--portal-theme-color);
+}
+
+.login-button-box span {
+  width: 20px !important;
+  height: 20px !important;
+  /* margin-top: 4px; */
+  color: #fff !important;
+}
+
+.snackbar-cross-icon svg {
+  color: #fff;
+  font-size: 16px;
+}
+
+.circular-progress {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.circular-progress svg {
+  color: var(--portal-theme-color) !important;
+}
+
+.mui-confirmation-popup .MuiPaper-elevation,
+.mui-component-popup .MuiPaper-elevation {
+  background-color: var(--portal-theme-primary);
+}
+
+.mui-confirmation-popup p,
+.mui-confirmation-popup button {
+  color: var(--portal-theme-color) !important;
+}
+
+.mui-component-popup .MuiPaper-elevation {
+  padding: 30px;
+}
+
+.mui-component-popup-title {
+  color: var(--portal-theme-color);
+}
+
+.change-my-password {
+  width: 380px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.change-my-password h3 {
+  color: var(--portal-theme-color);
+}
+
+/* .change-my-password button {
+    color: #fff !important;
+} */
+
+.visibility-password svg {
+  color: var(--portal-theme-color);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.MuiPickersPopper-paper {
+  background-color: var(--portal-theme-secondary) !important;
+  color: #fff !important;
+}
+
+.MuiPickersPopper-paper svg,
+.mui-date-picker svg {
+  color: var(--portal-theme-color) !important;
+}
+
+.MuiPickersPopper-paper .Mui-selected {
+  background-color: var(--portal-theme-color) !important;
+  color: #fff !important;
+}
+
+.MuiDayPicker-weekDayLabel {
+  color: #fff !important;
+}
+
+.MuiPickersDay-root {
+  background-color: var(--portal-theme-secondary) !important;
+  color: #fff !important;
+}
+
+.MuiPickersDay-root:hover {
+  background-color: var(--portal-theme-color) !important;
+  color: #fff !important;
+}
+
+.MuiPickersDay-today {
+  border: 1px solid var(--portal-theme-color) !important;
+  color: var(--portal-theme-color) !important;
+}
+
+/* .MuiClock-amButton {
+    background-color: var(--portal-theme-color) !important;
+    color: #fff !important;
+    font-size: 17px !important;
+} */
+
+.autocomplete-paper {
+  background-color: var(--portal-theme-secondary) !important;
+  color: #fff !important;
+}
+
+.autocomplete-mui .MuiAutocomplete-tag,
+.autocomplete-mui .MuiAutocomplete-tag svg {
+  background-color: var(--portal-theme-secondary);
+  color: var(--portal-theme-color);
+}
+
+.child-menus-list {
+  padding-left: 40px !important;
+}
+
+.lesson-book-card {
+  height: 250px;
+  display: flex;
+  border: 2px dotted var(--portal-theme-color);
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lesson-book-card a,
+.lesson-card-link a,
+.holy-quran-index-pages a {
+  text-decoration: none;
+}
+
+.lesson-book-card h2,
+.lesson-card-link h2 {
+  color: var(--portal-theme-color);
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.lesson-card-link {
+  height: 120px;
+  display: flex;
+  border: 2px dotted var(--text-primary-color);
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lesson-card-link h2 {
+  font-size: 22px;
+}
+
+.holy-quran-index-pages h2 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: var(--portal-theme-color);
+}
+
+.lesson-main-page-number h2 {
+  font-size: 30px;
+}
+
+.arrows-on-main-page a {
+  color: var(--portal-theme-color);
+}
+
+.data-not-found-box {
+  border-bottom: 1px solid var(--input-border-color) !important;
+}
+
+.default-checkbox {
+  color: var(--portal-theme-color) !important;
+}
+
+.progress-checkbox {
+  color: var(--portal-theme-secondary) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.make-link span {
+  color: var(--portal-theme-color);
+  cursor: pointer;
+}
+
+.make-link span:hover {
+  text-decoration: underline;
+}
+
+.no-class-today {
+  font-weight: bold;
+  color: #e90a0a !important;
+}
+
+.no-more-class {
+  font-weight: bold;
+  color: #d8db18 !important;
+}
+
+.class-finished {
+  font-weight: bold;
+  color: #04b504 !important;
+}
+.class-started {
+  font-weight: bold;
+  color: #3eff3e !important;
+}
+
+.remaining-time {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #3eed3e;
+  font-family: monospace;
+}
+.filter-button-on-report button {
+  white-space: nowrap;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.filter-button-on-report .MuiInputBase-sizeSmall,
+.filter-button-on-report .MuiInputBase-sizeSmall:hover {
+  border: 1px solid var(--input-border-color) !important;
+}
+
+.filter-button-on-report svg {
+  color: var(--portal-theme-color);
+  fill: var(--portal-theme-color);
+}
+
+.chatting-sidebar .chatting-user .user-name h5 {
+  margin-left: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.chatting-sidebar .chatting-user .user-name p {
+  margin-left: 5px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.chatting-sidebar .message-date {
+  margin-top: 5px;
+  font-size: 11px;
+  padding-top: 2px;
+}
+
+.chatting-section {
+  height: 80vh;
+  border: 1px solid var(--portal-theme-secondary);
+  position: relative;
+}
+
+.chatting-sidebar .chatting-user {
+  cursor: pointer;
+}
+
+.chatting-sidebar .search-bar {
+  color: var(--portal-theme-color);
+}
+
+.chatting-sidebar .search-bar label {
+  color: var(--portal-theme-color);
+}
+
+.chatting-sidebar .search-bar input,
+.chatting-sidebar .search-bar svg {
+  color: var(--portal-theme-color);
+}
+
+.chatting-sidebar .search-bar fieldset {
+  border: 1px solid var(--portal-theme-color) !important;
+}
+
+.css-1mj6pcd-MuiAvatar-root {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.chatting-users-list {
+  height: 72vh;
+  overflow: auto;
+}
+
+.chatting-section .user-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.write-message {
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+}
+
+.write-message input {
+  background-color: var(--portal-theme-secondary);
+  border: none;
+  border-radius: 25px;
+  color: var(--text-primary-color);
+  height: 40px;
+  padding: 15px;
+  width: 100%;
+}
+
+.write-message input:focus {
+  outline: none;
+  border: none;
+}
+
+.write-message button {
+  background-color: var(--portal-theme-secondary);
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  color: var(--portal-theme-color);
+  margin-left: 5px;
+}
+
+.chatting-section .user-card {
+  background-color: var(--portal-theme-secondary);
+  padding: 10px;
+}
+
+.chatting-messages {
+  padding: 12px;
+  height: 62vh;
+  overflow: auto;
+}
+
+.chatting-messages .message {
+  position: relative;
+}
+
+.chatting-messages .message .message-date span {
+  font-size: 11px;
+  background-color: transparent;
+  padding-left: 0;
+}
+
+.chatting-messages .message span {
+  background-color: var(--portal-theme-secondary);
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+
+.outgoing-message {
+  text-align: right;
+}
+
+.add-new-chat .user-name p {
+  color: var(--text-primary-color);
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+
+.add-new-chat .chat-border {
+  border: 1px solid var(--portal-theme-color);
+  padding: 7px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.no-messages {
+  height: 52vh;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.circular-progress-message {
+  height: 60vh;
+}
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.back-button-box {
+  height: 38px;
+  width: 38px;
+  background-color: var(--portal-theme-light) !important;
+  color: var(--portal-theme-color) !important;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 4px;
+  margin-right: 20px;
+  /* opacity: 0.5; */
+}
+
+.back-button-box a {
+  color: var(--portal-theme-color);
+  font-size: 20px;
+}
